@@ -22,7 +22,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         StringBuilder sb = new StringBuilder();
         sb.append("CREATE TABLE cocktailmemo (");
         sb.append("_id INTEGER PRIMARY KEY,");
-        sb.append("note TEXT,");
+        sb.append("name TEXT,");
+        sb.append("note TEXT");
         sb.append(");");
         String sql = sb.toString();
 
