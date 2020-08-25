@@ -48,6 +48,7 @@ public class CocktailMemoActivity extends AppCompatActivity {
     public void onSaveButtonClick(View view){
         // 感想欄を取得
         EditText etNote = findViewById(R.id.etNote);
+
         String note = etNote.getText().toString();
 
         // データベースヘルパーオブジェクトを作成
@@ -57,7 +58,7 @@ public class CocktailMemoActivity extends AppCompatActivity {
         try {
             // リストで選択されたカクテルのメモデータを削除、その後インサートを行う
             // 削除用SQL文字列を用意
-            String sqlDelete = "DELETE FROM cocktail WHERE _id = ?";
+            String sqlDelete = "DELETE FROM cocktailmemo WHERE _id = ?";
             // SQL文字列をもとにプリペアードステートメントを取得
             SQLiteStatement stmt = db.compileStatement(sqlDelete);
             // 変数のバインド

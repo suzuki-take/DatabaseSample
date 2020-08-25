@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">データベースサンプル</string>
-    <string-array name="lv_cocktailList">
+    <string-array name="lv_cocktaillist">
         <item>ホワイトレディ</item>
         <item>バラライカ</item>
         <item>XYZ</item>
